@@ -2,18 +2,18 @@ function reducer(input, action) {
   // Ваше решение тут
   switch (action) {
     case 'upperCase':
-      return string.toUpperCase();
+      return input.toUpperCase();
 
 
     case 'lowerCase':
-      return string.toLowerCase();
+      return input.toLowerCase();
     case 'capitalize':
-      const arrayWithWords = string.split(' ');
+      const arrayWithWords = input.split(' ');
       return arrayWithWords.map(item => `${item[0].toUpperCase()}${item.slice(1)}`).join(' ');
-    // return string.split(' ').map(item => `${item[0].toUpperCase()}${item.slice(1)}`).join(' ');
-    // return capitalize(string);
+    // return input.split(' ').map(item => `${item[0].toUpperCase()}${item.slice(1)}`).join(' ');
+    // return capitalize(input);
     default:
-      return string;
+      return input;
   }
 }
 
